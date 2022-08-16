@@ -1,0 +1,6 @@
+framework module ActionCableClient {
+  umbrella header "ActionCableClient-umbrella.h"
+
+  export *
+  module * { export * }
+}

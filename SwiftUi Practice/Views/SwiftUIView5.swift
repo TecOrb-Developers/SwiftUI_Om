@@ -9,23 +9,9 @@ import SwiftUI
 
 struct SwiftUIView5: View {
     var body: some View {
-        NavigationView
-        {
-        ScrollView{
-            VStack{
-                ForEach(0..<10){ index in
-                   Rectangle()
-                        .fill(Color.blue)
-                        .frame(width: 350, height: 200)
-                        .padding(10)
-                    
-                }
-            }
+        VStack{
+            
         }
-        .navigationBarHidden(true)
-        .navigationBarTitleDisplayMode(.automatic)
-        .navigationBarBackButtonHidden(true)
-    }
   }
 }
 
