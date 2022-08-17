@@ -16,22 +16,11 @@ struct SwiftUIView3: View {
         ScrollView
         {
             NavigationLink("click here ",destination: SwiftUIView5())
-                    
-//                        NavigationLink(destination: SwiftUIView4()) {
-//                            Text("GO TO Next")
-//                                .padding(15)
-//                                .frame(minWidth: 0, maxWidth: .infinity)
-//                                .background(Color.red)
-//                                .foregroundColor(Color.white)
-//                                .cornerRadius(4)
-//                        }
                         .padding([.leading, .trailing], 30)
                         .padding([.top], 10)
                         .frame(height: 50)
                     
-                   
-
-            VStack{
+                VStack{
                     ForEach(nameArr.indices){ index in
                         ScrollView(.horizontal, showsIndicators: false, content: {
                         
@@ -56,6 +45,7 @@ struct SwiftUIView3: View {
              }
       
          }
+        .navigationBarBackButtonHidden(true)
         }
     }
         

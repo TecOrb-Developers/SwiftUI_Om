@@ -1,0 +1,363 @@
+PODS:
+  - Alamofire (5.6.2)
+  - AppAuth (1.5.0):
+    - AppAuth/Core (= 1.5.0)
+    - AppAuth/ExternalUserAgent (= 1.5.0)
+  - AppAuth/Core (1.5.0)
+  - AppAuth/ExternalUserAgent (1.5.0):
+    - AppAuth/Core
+  - CountryPickerView (3.3.0)
+  - Crashlytics (3.14.0):
+    - Fabric (~> 1.10.2)
+  - DGActivityIndicatorView (2.1.1)
+  - Fabric (1.10.2)
+  - FBAEMKit (14.1.0):
+    - FBSDKCoreKit_Basics (= 14.1.0)
+  - FBSDKCoreKit (14.1.0):
+    - FBAEMKit (= 14.1.0)
+    - FBSDKCoreKit_Basics (= 14.1.0)
+  - FBSDKCoreKit_Basics (14.1.0)
+  - FBSDKLoginKit (14.1.0):
+    - FBSDKCoreKit (= 14.1.0)
+  - FBSDKShareKit (14.1.0):
+    - FBSDKCoreKit (= 14.1.0)
+  - Firebase/Auth (9.4.0):
+    - Firebase/CoreOnly
+    - FirebaseAuth (~> 9.4.0)
+  - Firebase/Core (9.4.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (~> 9.4.0)
+  - Firebase/CoreOnly (9.4.0):
+    - FirebaseCore (= 9.4.0)
+  - Firebase/Database (9.4.0):
+    - Firebase/CoreOnly
+    - FirebaseDatabase (~> 9.4.0)
+  - Firebase/Messaging (9.4.0):
+    - Firebase/CoreOnly
+    - FirebaseMessaging (~> 9.4.0)
+  - Firebase/RemoteConfig (9.4.0):
+    - Firebase/CoreOnly
+    - FirebaseRemoteConfig (~> 9.4.0)
+  - Firebase/Storage (9.4.0):
+    - Firebase/CoreOnly
+    - FirebaseStorage (~> 9.4.0)
+  - FirebaseABTesting (9.4.0):
+    - FirebaseCore (~> 9.0)
+  - FirebaseAnalytics (9.4.0):
+    - FirebaseAnalytics/AdIdSupport (= 9.4.0)
+    - FirebaseCore (~> 9.0)
+    - FirebaseInstallations (~> 9.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
+    - GoogleUtilities/MethodSwizzler (~> 7.7)
+    - GoogleUtilities/Network (~> 7.7)
+    - "GoogleUtilities/NSData+zlib (~> 7.7)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - FirebaseAnalytics/AdIdSupport (9.4.0):
+    - FirebaseCore (~> 9.0)
+    - FirebaseInstallations (~> 9.0)
+    - GoogleAppMeasurement (= 9.4.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
+    - GoogleUtilities/MethodSwizzler (~> 7.7)
+    - GoogleUtilities/Network (~> 7.7)
+    - "GoogleUtilities/NSData+zlib (~> 7.7)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - FirebaseAppCheckInterop (9.4.0)
+  - FirebaseAuth (9.4.0):
+    - FirebaseCore (~> 9.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
+    - GoogleUtilities/Environment (~> 7.7)
+    - GTMSessionFetcher/Core (< 3.0, >= 1.7)
+  - FirebaseAuthInterop (9.4.0)
+  - FirebaseCore (9.4.0):
+    - FirebaseCoreDiagnostics (~> 9.0)
+    - FirebaseCoreInternal (~> 9.0)
+    - GoogleUtilities/Environment (~> 7.7)
+    - GoogleUtilities/Logger (~> 7.7)
+  - FirebaseCoreDiagnostics (9.4.0):
+    - GoogleDataTransport (< 10.0.0, >= 9.1.4)
+    - GoogleUtilities/Environment (~> 7.7)
+    - GoogleUtilities/Logger (~> 7.7)
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - FirebaseCoreExtension (9.4.0):
+    - FirebaseCore (~> 9.0)
+  - FirebaseCoreInternal (9.4.0):
+    - "GoogleUtilities/NSData+zlib (~> 7.7)"
+  - FirebaseDatabase (9.4.0):
+    - FirebaseCore (~> 9.0)
+    - leveldb-library (~> 1.22)
+  - FirebaseInstallations (9.4.0):
+    - FirebaseCore (~> 9.0)
+    - GoogleUtilities/Environment (~> 7.7)
+    - GoogleUtilities/UserDefaults (~> 7.7)
+    - PromisesObjC (~> 2.1)
+  - FirebaseMessaging (9.4.0):
+    - FirebaseCore (~> 9.0)
+    - FirebaseInstallations (~> 9.0)
+    - GoogleDataTransport (< 10.0.0, >= 9.1.4)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
+    - GoogleUtilities/Environment (~> 7.7)
+    - GoogleUtilities/Reachability (~> 7.7)
+    - GoogleUtilities/UserDefaults (~> 7.7)
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - FirebaseRemoteConfig (9.4.0):
+    - FirebaseABTesting (~> 9.0)
+    - FirebaseCore (~> 9.0)
+    - FirebaseInstallations (~> 9.0)
+    - GoogleUtilities/Environment (~> 7.7)
+    - "GoogleUtilities/NSData+zlib (~> 7.7)"
+  - FirebaseStorage (9.4.0):
+    - FirebaseAppCheckInterop (~> 9.0)
+    - FirebaseAuthInterop (~> 9.0)
+    - FirebaseCore (~> 9.0)
+    - FirebaseCoreExtension (~> 9.0)
+    - FirebaseStorageInternal (~> 9.0)
+  - FirebaseStorageInternal (9.4.0):
+    - FirebaseCore (~> 9.0)
+    - GTMSessionFetcher/Core (< 3.0, >= 1.7)
+  - FSCalendar (2.8.4)
+  - GoogleAppMeasurement (9.4.0):
+    - GoogleAppMeasurement/AdIdSupport (= 9.4.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
+    - GoogleUtilities/MethodSwizzler (~> 7.7)
+    - GoogleUtilities/Network (~> 7.7)
+    - "GoogleUtilities/NSData+zlib (~> 7.7)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - GoogleAppMeasurement/AdIdSupport (9.4.0):
+    - GoogleAppMeasurement/WithoutAdIdSupport (= 9.4.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
+    - GoogleUtilities/MethodSwizzler (~> 7.7)
+    - GoogleUtilities/Network (~> 7.7)
+    - "GoogleUtilities/NSData+zlib (~> 7.7)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - GoogleAppMeasurement/WithoutAdIdSupport (9.4.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
+    - GoogleUtilities/MethodSwizzler (~> 7.7)
+    - GoogleUtilities/Network (~> 7.7)
+    - "GoogleUtilities/NSData+zlib (~> 7.7)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - GoogleDataTransport (9.2.0):
+    - GoogleUtilities/Environment (~> 7.7)
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+    - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleMaps (7.0.0):
+    - GoogleMaps/Maps (= 7.0.0)
+  - GoogleMaps/Base (7.0.0)
+  - GoogleMaps/Maps (7.0.0):
+    - GoogleMaps/Base
+  - GooglePlaces (7.0.0)
+  - GoogleSignIn (6.2.2):
+    - AppAuth (~> 1.5)
+    - GTMAppAuth (~> 1.3)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleUtilities/AppDelegateSwizzler (7.7.0):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (7.7.0):
+    - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleUtilities/Logger (7.7.0):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (7.7.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (7.7.0):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (7.7.0)"
+  - GoogleUtilities/Reachability (7.7.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (7.7.0):
+    - GoogleUtilities/Logger
+  - GTMAppAuth (1.3.0):
+    - AppAuth/Core (~> 1.4)
+    - GTMSessionFetcher/Core (~> 1.5)
+  - GTMSessionFetcher/Core (1.7.2)
+  - HexColors (2.2.1)
+  - IQKeyboardManagerSwift (6.5.10)
+  - JDStatusBarNotification (2.0.6)
+  - KDCircularProgress (1.5.4)
+  - KeychainSwift (19.0.0)
+  - leveldb-library (1.22.1)
+  - MGSwipeTableCell (1.6.14)
+  - nanopb (2.30909.0):
+    - nanopb/decode (= 2.30909.0)
+    - nanopb/encode (= 2.30909.0)
+  - nanopb/decode (2.30909.0)
+  - nanopb/encode (2.30909.0)
+  - PromisesObjC (2.1.1)
+  - QRCodeReader.swift (10.1.0)
+  - RSKPlaceholderTextView (6.1.0)
+  - ScrollableGraphView (4.0.6)
+  - SDWebImage (3.8.3):
+    - SDWebImage/Core (= 3.8.3)
+  - SDWebImage/Core (3.8.3)
+  - SkyFloatingLabelTextField (3.8.0)
+  - SVProgressHUD (2.2.5)
+  - SwiftyJSON (5.0.1)
+  - Toast (4.0.0)
+  - TSMessages (0.9.12):
+    - HexColors (~> 2.2.0)
+  - TTTAttributedLabel (2.0.0)
+  - UIActivityIndicator-for-SDWebImage (1.2):
+    - SDWebImage (~> 3.7)
+  - YLProgressBar (3.10.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - CountryPickerView
+  - Crashlytics
+  - DGActivityIndicatorView
+  - Fabric
+  - FBSDKCoreKit
+  - FBSDKLoginKit
+  - FBSDKShareKit
+  - Firebase/Auth
+  - Firebase/Core
+  - Firebase/Database
+  - Firebase/Messaging
+  - Firebase/RemoteConfig
+  - Firebase/Storage
+  - FSCalendar
+  - GoogleMaps
+  - GooglePlaces
+  - GoogleSignIn
+  - IQKeyboardManagerSwift
+  - JDStatusBarNotification
+  - KDCircularProgress
+  - KeychainSwift (~> 19.0)
+  - MGSwipeTableCell
+  - QRCodeReader.swift (~> 10.1.0)
+  - RSKPlaceholderTextView
+  - ScrollableGraphView
+  - SDWebImage
+  - SkyFloatingLabelTextField (~> 3.0)
+  - SVProgressHUD
+  - SwiftyJSON
+  - Toast (~> 4.0.0)
+  - TSMessages
+  - TTTAttributedLabel
+  - UIActivityIndicator-for-SDWebImage
+  - YLProgressBar (~> 3.10.2)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AppAuth
+    - CountryPickerView
+    - Crashlytics
+    - DGActivityIndicatorView
+    - Fabric
+    - FBAEMKit
+    - FBSDKCoreKit
+    - FBSDKCoreKit_Basics
+    - FBSDKLoginKit
+    - FBSDKShareKit
+    - Firebase
+    - FirebaseABTesting
+    - FirebaseAnalytics
+    - FirebaseAppCheckInterop
+    - FirebaseAuth
+    - FirebaseAuthInterop
+    - FirebaseCore
+    - FirebaseCoreDiagnostics
+    - FirebaseCoreExtension
+    - FirebaseCoreInternal
+    - FirebaseDatabase
+    - FirebaseInstallations
+    - FirebaseMessaging
+    - FirebaseRemoteConfig
+    - FirebaseStorage
+    - FirebaseStorageInternal
+    - FSCalendar
+    - GoogleAppMeasurement
+    - GoogleDataTransport
+    - GoogleMaps
+    - GooglePlaces
+    - GoogleSignIn
+    - GoogleUtilities
+    - GTMAppAuth
+    - GTMSessionFetcher
+    - HexColors
+    - IQKeyboardManagerSwift
+    - JDStatusBarNotification
+    - KDCircularProgress
+    - KeychainSwift
+    - leveldb-library
+    - MGSwipeTableCell
+    - nanopb
+    - PromisesObjC
+    - QRCodeReader.swift
+    - RSKPlaceholderTextView
+    - ScrollableGraphView
+    - SDWebImage
+    - SkyFloatingLabelTextField
+    - SVProgressHUD
+    - SwiftyJSON
+    - Toast
+    - TSMessages
+    - TTTAttributedLabel
+    - UIActivityIndicator-for-SDWebImage
+    - YLProgressBar
+
+SPEC CHECKSUMS:
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  AppAuth: 80317d99ac7ff2801a2f18ff86b48cd315ed465d
+  CountryPickerView: 6322ada32a80b0cd721b0267282a5c24f406f263
+  Crashlytics: 9220f5bc89e7a618df411b4f639389dbfb0e03d2
+  DGActivityIndicatorView: ff2c76073d79692f724863c8dd38685866a03cb6
+  Fabric: ea977e3cd9c20425516d3dafd3bf8c941c51223f
+  FBAEMKit: a899515e45476027f73aef377b5cffadcd56ca3a
+  FBSDKCoreKit: 24f8bc8d3b5b2a8c5c656a1329492a12e8efa792
+  FBSDKCoreKit_Basics: 6e578c9bdc7aa1365dbbbde633c9ebb536bcaa98
+  FBSDKLoginKit: 787de205d524c3a4b17d527916f1d066e4361660
+  FBSDKShareKit: b9c1cd1fa6a320a50f0f353cf30d589049c8db77
+  Firebase: 7703fc4022824b6d6db1bf7bea58d13b8e17ec46
+  FirebaseABTesting: e59eec91fafce74a0f5261809ed0025b7e450db1
+  FirebaseAnalytics: a1a24e72b7ba7f47045a4633f1abb545c07bd29c
+  FirebaseAppCheckInterop: 63119cdfc94b16c3e9421513c17f597aee2ea225
+  FirebaseAuth: ae5d4402e1516497357d909162b091b3ca2a2e9c
+  FirebaseAuthInterop: 826d3d772b554e3675ceaab8c665008277ca9d1c
+  FirebaseCore: 9a2b10270a854731c4d4d8a97d0aa8380ec3458d
+  FirebaseCoreDiagnostics: aaa87098082c4d4bdd1a9557b1186d18ca85ce8c
+  FirebaseCoreExtension: 2cf8c542b54ad3c2d4b746c22e8828b670dcd9b0
+  FirebaseCoreInternal: a13302b0088fbf5f38b79b6ece49c2af7d3e05d6
+  FirebaseDatabase: e93f5441b549ea4492a8d8a0c7d612ac46c1b12a
+  FirebaseInstallations: 61db1054e688d2bdc4e2b3f744c1b086e913b742
+  FirebaseMessaging: 4e220eddd356181469ba2ec5f7d5fafbc2312841
+  FirebaseRemoteConfig: 6d9982bc64548a6e3c1b497b9fa53938ad135f2d
+  FirebaseStorage: 160ba975dd3452d9c59a3bf5ea9bf70ff96bd3c2
+  FirebaseStorageInternal: 425c7dc7de44d9b7e07a9f8d6515bab0f1266b87
+  FSCalendar: 2d1d0d9398f12d439f55c1fe0f01525b151b8260
+  GoogleAppMeasurement: 5d69e04287fc2c10cc43724bfa4bf31fc12c3dff
+  GoogleDataTransport: 1c8145da7117bd68bbbed00cf304edb6a24de00f
+  GoogleMaps: 6e9c923ca035989709fcb5771544fda4cc5fa2a4
+  GooglePlaces: 8dba710bed6160a2e4b85e84aaafdbcc0b4010d8
+  GoogleSignIn: 3c68388ac221f379676e8f1cb115df3aaf73b93f
+  GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
+  GTMAppAuth: 4d8f864896f3646f0c33baf38a28362f4c601e15
+  GTMSessionFetcher: 5595ec75acf5be50814f81e9189490412bad82ba
+  HexColors: abfd172e329dab59888614ccba6f216cec59289d
+  IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
+  JDStatusBarNotification: 4f31f9b12544350dad3f46411f71e4b7c5302ad4
+  KDCircularProgress: 98200c6b8e85d22bc04eb644721d3b1e12b0686b
+  KeychainSwift: a06190cf933ad46b1e0abc3d77d29c06331715c7
+  leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
+  MGSwipeTableCell: d99ed6466f393b71cd488c6f798ba112ff5d1d01
+  nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
+  PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
+  QRCodeReader.swift: 373a389fe9a22d513c879a32a6f647c58f4ef572
+  RSKPlaceholderTextView: 52f26e643b6f9bbf16f45cd2bbe2181b6dfe090c
+  ScrollableGraphView: 4af35d4ea9ecdec665d34a74da51da161ddff8ac
+  SDWebImage: a72e880a8fe0f7fc31efe15aaed443c074d2a80c
+  SkyFloatingLabelTextField: 5a338412114808e961fe2d14ea2c5452c8b6e4aa
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+  TSMessages: c8cc7b80f2a833af533872cd02010cac061532cc
+  TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
+  UIActivityIndicator-for-SDWebImage: 7bf7ebbf0ed1747dedc0d6e949c4603a6d0f9e0c
+  YLProgressBar: 365b6c5e934be18b661f79413db33c993c8e8251
+
+PODFILE CHECKSUM: 546e3fbd3fcc95d96e55a6a190cbbd17a4ed1b18
+
+COCOAPODS: 1.11.3

@@ -6,18 +6,24 @@
 //
 
 import SwiftUI
+import Alamofire
 
 struct ContentView: View {
     @State var name = ""
+    @State var username:String = ""
     @ObservedObject private var user : User = User()
     @State private var isShowingDetailView = false
     @State var mobile = ""
     var body: some View {
+       
 //        ZStack{
 //            Image("Splash_Screen _with_text")
 //                .edgesIgnoringSafeArea(.all)
 //                .frame(width: .infinity, height: .infinity)
 //        }
+        
+        
+        
        NavigationView
         {
 
@@ -55,9 +61,8 @@ struct ContentView: View {
 
                              Text("login".uppercased())
                                  .frame(minWidth: 0, maxWidth: .infinity)
-                                 
+
                                  .padding(10)
-                                // .padding(.horizontal, 50)
                                  .background(Color.blue.cornerRadius(10).shadow(radius: 10))
                 }
                          .padding([.leading, .trailing], 30)
@@ -73,5 +78,34 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct loginPage:View
+{
+    @State var username:String = ""
+    var body: some View
+    {
+        VStack(alignment: .leading, spacing: 10)
+        {
+            Text("Login")
+                .bold()
+            padding()
+            Text("Please")
+                .fontWeight(.semibold)
+            HStack{
+                VStack(alignment: .leading, spacing: 10){
+                    Text("UserName")
+                    Text("Password")
+                   }
+                VStack{
+                    TextField("Type Some Thing", text: $username)
+                     
+                    TextField("Type Some Thing", text: $username)
+                }
+                .padding()
+            }
+            
+        }.padding()
     }
 }
