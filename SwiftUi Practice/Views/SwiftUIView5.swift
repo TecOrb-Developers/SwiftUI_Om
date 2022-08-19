@@ -41,7 +41,7 @@ struct loginView: View {
                 .padding(.top,-80)
             Text("HOMP")
             
-            Text("Sign in").multilineTextAlignment(.leading)
+            Text("Sign In").multilineTextAlignment(.leading)
                 .font(.largeTitle)
                 .padding(.top,-20)
             
@@ -105,6 +105,7 @@ struct login : View {
                 TextField("Enter Mobile No", text: $Mobile)
                 //                        .padding()
                     .frame(width: 300, height: 45)
+                let data   =   debugPrint($Mobile)
             }
             
             .overlay(RoundedRectangle(cornerRadius: 10)
@@ -128,6 +129,21 @@ struct login : View {
         //.edgesIgnoringSafeArea(.top)
         .padding(.bottom, 30)
         
+        Button(action: {
+        })
+        {
+        Text("SIGN IN")
+                    .frame(minWidth: 0, maxWidth: 100)
+                    .font(.system(size: 15))
+                    .padding()
+                    .foregroundColor(.white)
+                    .shadow(color: .black, radius: 25, x: 0, y: 0)
+                    .opacity(1)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 25)
+                            .stroke(Color.white, lineWidth: 1)
+                )
+            }
     }
 }
 

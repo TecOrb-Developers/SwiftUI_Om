@@ -10,7 +10,7 @@ import SwiftUI
 struct SignUpView: View {
     
     var body: some View {
-        initial()
+        Signup()
     }
 }
 
@@ -21,56 +21,120 @@ struct SignUpView_Previews: PreviewProvider {
 }
 
 
-
-
-
-
-
-
-struct initial: View
+struct Signup: View
 {   @State var firstName:String = ""
-    @State var lastname:String = ""
-    @State var mobileno:String = ""
-    @State var emailId:String = ""
+    @State var lastName:String = ""
+    @State var mobileNo:String = ""
+    @State var passWord:String = ""
+    @State var showAlert:Bool = false
+    @State var errorTitle = ""
     var body: some View
     {
-        Image("logo")
-            .resizable()
-            .aspectRatio(contentMode: .fit)
-            .padding(.top,10)
-            .frame(width: 100, height: 100)
-        Divider()
-        VStack(alignment: .center, spacing: 10){
-            TextField("Enter the first name ", text: $firstName)
-                .padding(10)
-                .frame(width: 300, height: 40, alignment: .topLeading)
-          
-                .overlay(RoundedRectangle(cornerRadius: 10).stroke(.blue,lineWidth: 2))
+        VStack{
+            //MARK: - Header
+            SignUpHeader()
+            //MARK: - Logo
+            SignUpLogo()
+            //MARK: - TextField
+            CustomLabelTextfield(label: "firstName", placeHolder: "Enter Your First Name", secure: false, bVariable: $firstName)
+            CustomLabelTextfield(label: "lastName", placeHolder: "Enter the last Name", secure: false, bVariable: $lastName)
+            CustomLabelTextfield(label: "Mobile Number", placeHolder: "Enter the Mobile Number ", secure: false, bVariable: $mobileNo)
+            CustomLabelTextfield(label: "Password", placeHolder: "Enter The Password", secure: true, bVariable: $passWord)
             
-            TextField("Enter the last name ", text: $lastname)
-                .padding(10)
-                .frame(width: 300, height: 40, alignment: .topLeading)
-              
-                .overlay(RoundedRectangle(cornerRadius: 10).stroke(.blue,lineWidth: 2))
-               
-            TextField("Enter the Mobile number ",text: $mobileno)
-                .padding(10)
-                .frame(width: 300, height: 40, alignment: .topLeading)
-             
-                .overlay(RoundedRectangle(cornerRadius: 10).stroke(.blue,lineWidth:  2))
-               
-            TextField("Enter the Emailid",text: $emailId)
-                .padding(10)
-                .frame(width: 300, height: 40, alignment: .topLeading)
-              
-                .overlay(RoundedRectangle(cornerRadius: 10).stroke(.blue,lineWidth: 2))
-               
-        }
-       Divider()
-        Button("Submit")
-        {
-//            self.presentationMode.wrappedValue.dismiss()
         }
         
+        //MARK: - Button Title With Action
+        Button(action:
+        {
+            if self.firstName.isEmpty
+            {
+                self.errorTitle = "Please Enter First Name"
+                self.showAlert = true
+            }
+            else if !(self.firstName).isValidUserName()
+            {
+                self.errorTitle = "Please Enter valid First name "
+                self.showAlert = true
+           
+            }
+            else if self.lastName.isEmpty
+            {
+                self.errorTitle = "please Enter Last name "
+                self.showAlert = true
+           
+            }
+            else if !(self.lastName).isValidUserName()
+            {
+                self.errorTitle = "please Enter valid Last name "
+                self.showAlert = true
+           
+            }
+            else if self.mobileNo == ""
+            {
+                self.errorTitle = "Please Enter Mobile Number "
+                self.showAlert = true
+            }
+            else if !(self.mobileNo).isPhoneNumber()
+            {
+                self.errorTitle = "Please Enter valid Mobile Number "
+                self.showAlert = true
+           
+            }
+            else if self.passWord == ""
+            {
+                self.errorTitle = "Please Enter Password "
+                self.showAlert = true
+            }
+            else if !(self.passWord).isValidPassword()
+            {
+                self.errorTitle = "Please Enter valid Password of 8 Character In Alphabet ,Small And Special character "
+                self.showAlert = true
+                //return
+           
+            }
+            else{
+                self.errorTitle = " Most Welcome \(self.firstName) "
+                self.showAlert = true
+            }
+            
+        })
+        {
+            ButtonUi()
+        }
+        
+        //MARK: - Alert
+        .alert(isPresented: $showAlert)
+               {
+            Alert(title: Text(self.errorTitle))
+        }
     }
 }
+
+fileprivate func SignUpHeader() -> some View
+{
+    return Text("SignUp Screen")
+        .fontWeight(.semibold)
+        .font(.largeTitle)
+        .padding(.top, 10)
+}
+
+fileprivate func SignUpLogo() -> some View
+{
+    return Image("logo")
+        .clipped()
+        .frame(width: 100, height: 100, alignment: .center)
+        .padding(.bottom,20)
+}
+
+fileprivate func ButtonUi() -> some View
+{
+    return Text("SignUp")
+        .font(.headline)
+        .frame(width: 250, height: 60)
+        .foregroundColor(.white)
+        .background(Color.black)
+        .cornerRadius(10)
+        .padding(20)
+    
+}
+
