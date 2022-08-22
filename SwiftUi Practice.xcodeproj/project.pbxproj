@@ -17,6 +17,11 @@
 		18344EAD28A2743F00A59DE0 /* SwiftUi_PracticeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18344EAC28A2743F00A59DE0 /* SwiftUi_PracticeUITestsLaunchTests.swift */; };
 		18344EBA28A28A7700A59DE0 /* SwiftUIView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18344EB928A28A7700A59DE0 /* SwiftUIView1.swift */; };
 		183AD53428AB860D006FADFD /* SwiftUIView5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183AD53328AB860D006FADFD /* SwiftUIView5.swift */; };
+		185ED8D828B3942200D817EB /* CreatePassWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185ED8D728B3942200D817EB /* CreatePassWordView.swift */; };
+		185ED8DA28B3A5E800D817EB /* OtpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185ED8D928B3A5E800D817EB /* OtpView.swift */; };
+		185ED8DC28B3BA4D00D817EB /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185ED8DB28B3BA4D00D817EB /* ForgotPasswordView.swift */; };
+		18863E0028B274150098ACD4 /* Navigate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18863DFF28B274150098ACD4 /* Navigate.swift */; };
+		18863E0228B274FF0098ACD4 /* LanguageSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18863E0128B274FF0098ACD4 /* LanguageSelectView.swift */; };
 		1896594B28AF742C00C5CAF3 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1896594A28AF742C00C5CAF3 /* CustomTextField.swift */; };
 		1896594E28AF993A00C5CAF3 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1896594D28AF993A00C5CAF3 /* Validation.swift */; };
 		18A66E1928A3E33300B163AC /* SwiftUIView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A66E1828A3E33300B163AC /* SwiftUIView3.swift */; };
@@ -58,6 +63,11 @@
 		18344EAC28A2743F00A59DE0 /* SwiftUi_PracticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUi_PracticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		18344EB928A28A7700A59DE0 /* SwiftUIView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView1.swift; sourceTree = "<group>"; };
 		183AD53328AB860D006FADFD /* SwiftUIView5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView5.swift; sourceTree = "<group>"; };
+		185ED8D728B3942200D817EB /* CreatePassWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePassWordView.swift; sourceTree = "<group>"; };
+		185ED8D928B3A5E800D817EB /* OtpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpView.swift; sourceTree = "<group>"; };
+		185ED8DB28B3BA4D00D817EB /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		18863DFF28B274150098ACD4 /* Navigate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigate.swift; sourceTree = "<group>"; };
+		18863E0128B274FF0098ACD4 /* LanguageSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectView.swift; sourceTree = "<group>"; };
 		1896594A28AF742C00C5CAF3 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		1896594D28AF993A00C5CAF3 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		18A66E1828A3E33300B163AC /* SwiftUIView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView3.swift; sourceTree = "<group>"; };
@@ -160,6 +170,15 @@
 			path = "SwiftUi PracticeUITests";
 			sourceTree = "<group>";
 		};
+		18863DFE28B273C60098ACD4 /* HelpingClass */ = {
+			isa = PBXGroup;
+			children = (
+				1896594C28AF992300C5CAF3 /* Validation */,
+				18863DFF28B274150098ACD4 /* Navigate.swift */,
+			);
+			path = HelpingClass;
+			sourceTree = "<group>";
+		};
 		1896594728AF73B500C5CAF3 /* TextfieldCustom */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,13 +198,17 @@
 		18DC8A5C28A395A50005F751 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1896594C28AF992300C5CAF3 /* Validation */,
+				18863DFE28B273C60098ACD4 /* HelpingClass */,
 				1896594728AF73B500C5CAF3 /* TextfieldCustom */,
 				18344E9128A2743C00A59DE0 /* ContentView.swift */,
 				18344EB928A28A7700A59DE0 /* SwiftUIView1.swift */,
 				183AD53328AB860D006FADFD /* SwiftUIView5.swift */,
+				185ED8D728B3942200D817EB /* CreatePassWordView.swift */,
+				185ED8DB28B3BA4D00D817EB /* ForgotPasswordView.swift */,
+				185ED8D928B3A5E800D817EB /* OtpView.swift */,
 				18AA06B028A8ED0E0039B3E5 /* model.swift */,
 				18A66E1828A3E33300B163AC /* SwiftUIView3.swift */,
+				18863E0128B274FF0098ACD4 /* LanguageSelectView.swift */,
 				18A66E1A28A4D65D00B163AC /* SwiftUIView4.swift */,
 				1827652E28ACED9200A02197 /* SignUpView.swift */,
 			);
@@ -489,16 +512,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185ED8DA28B3A5E800D817EB /* OtpView.swift in Sources */,
 				18344E9228A2743C00A59DE0 /* ContentView.swift in Sources */,
 				18AA06B128A8ED0E0039B3E5 /* model.swift in Sources */,
+				18863E0228B274FF0098ACD4 /* LanguageSelectView.swift in Sources */,
 				18A66E1928A3E33300B163AC /* SwiftUIView3.swift in Sources */,
 				1896594B28AF742C00C5CAF3 /* CustomTextField.swift in Sources */,
 				18A66E1B28A4D65D00B163AC /* SwiftUIView4.swift in Sources */,
 				1827652F28ACED9200A02197 /* SignUpView.swift in Sources */,
 				18344E9028A2743C00A59DE0 /* SwiftUi_PracticeApp.swift in Sources */,
+				18863E0028B274150098ACD4 /* Navigate.swift in Sources */,
 				183AD53428AB860D006FADFD /* SwiftUIView5.swift in Sources */,
 				1896594E28AF993A00C5CAF3 /* Validation.swift in Sources */,
 				18344EBA28A28A7700A59DE0 /* SwiftUIView1.swift in Sources */,
+				185ED8DC28B3BA4D00D817EB /* ForgotPasswordView.swift in Sources */,
+				185ED8D828B3942200D817EB /* CreatePassWordView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

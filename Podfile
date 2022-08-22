@@ -44,6 +44,7 @@ pod 'SVProgressHUD'
  pod 'GoogleSignIn'
  pod 'TTTAttributedLabel'
  pod 'QRCodeReader.swift', '~> 10.1.0'
+pod 'SKCountryPicker'
 
   target 'SwiftUi PracticeTests' do
     inherit! :search_paths
