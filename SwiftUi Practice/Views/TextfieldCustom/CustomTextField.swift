@@ -22,13 +22,13 @@ struct CustomLabelTextfield :View
             {
                 SecureField(placeHolder,text: $bVariable)
                     .padding()
-                    .background(Color.black)
+                    .background(Color.white)
                     .cornerRadius(10)
             }
             else{
                 TextField(placeHolder,text: $bVariable)
                     .padding()
-                    .background(Color.black)
+                    .background(Color.white)
                     .cornerRadius(10)
             }
         }

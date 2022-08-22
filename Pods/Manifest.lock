@@ -191,6 +191,7 @@ PODS:
   - SDWebImage (3.8.3):
     - SDWebImage/Core (= 3.8.3)
   - SDWebImage/Core (3.8.3)
+  - SKCountryPicker (2.0.0)
   - SkyFloatingLabelTextField (3.8.0)
   - SVProgressHUD (2.2.5)
   - SwiftyJSON (5.0.1)
@@ -230,6 +231,7 @@ DEPENDENCIES:
   - RSKPlaceholderTextView
   - ScrollableGraphView
   - SDWebImage
+  - SKCountryPicker
   - SkyFloatingLabelTextField (~> 3.0)
   - SVProgressHUD
   - SwiftyJSON
@@ -290,6 +292,7 @@ SPEC REPOS:
     - RSKPlaceholderTextView
     - ScrollableGraphView
     - SDWebImage
+    - SKCountryPicker
     - SkyFloatingLabelTextField
     - SVProgressHUD
     - SwiftyJSON
@@ -349,6 +352,7 @@ SPEC CHECKSUMS:
   RSKPlaceholderTextView: 52f26e643b6f9bbf16f45cd2bbe2181b6dfe090c
   ScrollableGraphView: 4af35d4ea9ecdec665d34a74da51da161ddff8ac
   SDWebImage: a72e880a8fe0f7fc31efe15aaed443c074d2a80c
+  SKCountryPicker: 9d4921503cad7224a14a150802bb71228adbd90f
   SkyFloatingLabelTextField: 5a338412114808e961fe2d14ea2c5452c8b6e4aa
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
@@ -358,6 +362,6 @@ SPEC CHECKSUMS:
   UIActivityIndicator-for-SDWebImage: 7bf7ebbf0ed1747dedc0d6e949c4603a6d0f9e0c
   YLProgressBar: 365b6c5e934be18b661f79413db33c993c8e8251
 
-PODFILE CHECKSUM: 546e3fbd3fcc95d96e55a6a190cbbd17a4ed1b18
+PODFILE CHECKSUM: cdfefeb87a8f737383e40768fb4785b8b8a6b2e7
 
 COCOAPODS: 1.11.3

@@ -19,7 +19,7 @@ public struct Country: Equatable {
     public let code: String
     public let phoneCode: String
     public func localizedName(_ locale: Locale = Locale.current) -> String? {
-        return locale.localizedString(forRegionCode: code)
+        return locale.localizedString(forRegionCode: phoneCode)
     }
     public var flag: UIImage {
         // Cocoapods || SPM
