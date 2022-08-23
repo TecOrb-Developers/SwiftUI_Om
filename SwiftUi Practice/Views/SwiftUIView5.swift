@@ -10,7 +10,7 @@ import SKCountryPicker
 
 
 struct SwiftUIView5: View {
-    
+    @Environment(\.presentationMode) var presentationMode
     var body: some View {
         
         ZStack{
@@ -19,6 +19,20 @@ struct SwiftUIView5: View {
             loginView()
             
         }
+        //        navigationBarBackButtonHidden(true)
+        //        .navigationBarItems(leading:
+        //           Button(action:
+        //                    {
+        //               self.presentationMode.wrappedValue.dismiss()
+        //                   })
+        //                    {
+        //               HStack
+        //                 {
+        //                   Image(systemName: "sidemenu_arrow_icon-1")
+        //                   Text("Go Back")
+        //               }
+        //             }
+        //          )
     }
 }
 
@@ -112,10 +126,9 @@ struct login : View {
         VStack{
             
             HStack(){
-                
+                //MARK: = textField CountryCode Mobile Number
                 Button(action:
                         {
-                    
                     if selectedCountry != "" {
                         Text(Locale.current.localizedString(forRegionCode: selectedCountry) ?? selectedCountry)
                             .font(.system(size: 17))
@@ -124,9 +137,7 @@ struct login : View {
                         Text("+91")
                             .font(.system(size: 17))
                         // .foregroundColor(Color.black)
-                        
                     }
-                    
                 })
                 {
                     Picker("Country", selection: $selectedCountry) {

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181D163328B4B51D0095D089 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D163228B4B51D0095D089 /* ResetPasswordView.swift */; };
+		181D163628B4D99E0095D089 /* OtpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D163528B4D99E0095D089 /* OtpViewModel.swift */; };
+		18226EA328B50CA20090B036 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18226EA228B50CA20090B036 /* BackButton.swift */; };
 		1827652F28ACED9200A02197 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1827652E28ACED9200A02197 /* SignUpView.swift */; };
 		18344E9028A2743C00A59DE0 /* SwiftUi_PracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18344E8F28A2743C00A59DE0 /* SwiftUi_PracticeApp.swift */; };
 		18344E9228A2743C00A59DE0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18344E9128A2743C00A59DE0 /* ContentView.swift */; };
@@ -50,6 +53,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		181D163228B4B51D0095D089 /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
+		181D163528B4D99E0095D089 /* OtpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpViewModel.swift; sourceTree = "<group>"; };
+		18226EA128B4F98F0090B036 /* SwiftUi-Practice-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SwiftUi-Practice-Info.plist"; sourceTree = SOURCE_ROOT; };
+		18226EA228B50CA20090B036 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		1827652E28ACED9200A02197 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		18344E8C28A2743C00A59DE0 /* SwiftUi Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUi Practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18344E8F28A2743C00A59DE0 /* SwiftUi_PracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUi_PracticeApp.swift; sourceTree = "<group>"; };
@@ -112,6 +119,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		181D163428B4D9740095D089 /* ModelGroup */ = {
+			isa = PBXGroup;
+			children = (
+				18AA06B028A8ED0E0039B3E5 /* model.swift */,
+				181D163528B4D99E0095D089 /* OtpViewModel.swift */,
+			);
+			path = ModelGroup;
+			sourceTree = "<group>";
+		};
 		18344E8328A2743B00A59DE0 = {
 			isa = PBXGroup;
 			children = (
@@ -137,7 +153,10 @@
 		18344E8E28A2743C00A59DE0 /* SwiftUi Practice */ = {
 			isa = PBXGroup;
 			children = (
+				18226EA128B4F98F0090B036 /* SwiftUi-Practice-Info.plist */,
 				18344E8F28A2743C00A59DE0 /* SwiftUi_PracticeApp.swift */,
+				1896594728AF73B500C5CAF3 /* TextfieldCustom */,
+				18863DFE28B273C60098ACD4 /* HelpingClass */,
 				18DC8A5C28A395A50005F751 /* Views */,
 				18344E9328A2743F00A59DE0 /* Assets.xcassets */,
 				18344E9528A2743F00A59DE0 /* Preview Content */,
@@ -174,7 +193,6 @@
 			isa = PBXGroup;
 			children = (
 				1896594C28AF992300C5CAF3 /* Validation */,
-				18863DFF28B274150098ACD4 /* Navigate.swift */,
 			);
 			path = HelpingClass;
 			sourceTree = "<group>";
@@ -191,6 +209,8 @@
 			isa = PBXGroup;
 			children = (
 				1896594D28AF993A00C5CAF3 /* Validation.swift */,
+				18863DFF28B274150098ACD4 /* Navigate.swift */,
+				18226EA228B50CA20090B036 /* BackButton.swift */,
 			);
 			path = Validation;
 			sourceTree = "<group>";
@@ -198,19 +218,18 @@
 		18DC8A5C28A395A50005F751 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				18863DFE28B273C60098ACD4 /* HelpingClass */,
-				1896594728AF73B500C5CAF3 /* TextfieldCustom */,
+				181D163428B4D9740095D089 /* ModelGroup */,
 				18344E9128A2743C00A59DE0 /* ContentView.swift */,
-				18344EB928A28A7700A59DE0 /* SwiftUIView1.swift */,
-				183AD53328AB860D006FADFD /* SwiftUIView5.swift */,
-				185ED8D728B3942200D817EB /* CreatePassWordView.swift */,
-				185ED8DB28B3BA4D00D817EB /* ForgotPasswordView.swift */,
-				185ED8D928B3A5E800D817EB /* OtpView.swift */,
-				18AA06B028A8ED0E0039B3E5 /* model.swift */,
 				18A66E1828A3E33300B163AC /* SwiftUIView3.swift */,
 				18863E0128B274FF0098ACD4 /* LanguageSelectView.swift */,
-				18A66E1A28A4D65D00B163AC /* SwiftUIView4.swift */,
+				183AD53328AB860D006FADFD /* SwiftUIView5.swift */,
 				1827652E28ACED9200A02197 /* SignUpView.swift */,
+				185ED8DB28B3BA4D00D817EB /* ForgotPasswordView.swift */,
+				181D163228B4B51D0095D089 /* ResetPasswordView.swift */,
+				185ED8D728B3942200D817EB /* CreatePassWordView.swift */,
+				185ED8D928B3A5E800D817EB /* OtpView.swift */,
+				18A66E1A28A4D65D00B163AC /* SwiftUIView4.swift */,
+				18344EB928A28A7700A59DE0 /* SwiftUIView1.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -515,15 +534,18 @@
 				185ED8DA28B3A5E800D817EB /* OtpView.swift in Sources */,
 				18344E9228A2743C00A59DE0 /* ContentView.swift in Sources */,
 				18AA06B128A8ED0E0039B3E5 /* model.swift in Sources */,
+				181D163328B4B51D0095D089 /* ResetPasswordView.swift in Sources */,
 				18863E0228B274FF0098ACD4 /* LanguageSelectView.swift in Sources */,
 				18A66E1928A3E33300B163AC /* SwiftUIView3.swift in Sources */,
 				1896594B28AF742C00C5CAF3 /* CustomTextField.swift in Sources */,
 				18A66E1B28A4D65D00B163AC /* SwiftUIView4.swift in Sources */,
+				181D163628B4D99E0095D089 /* OtpViewModel.swift in Sources */,
 				1827652F28ACED9200A02197 /* SignUpView.swift in Sources */,
 				18344E9028A2743C00A59DE0 /* SwiftUi_PracticeApp.swift in Sources */,
 				18863E0028B274150098ACD4 /* Navigate.swift in Sources */,
 				183AD53428AB860D006FADFD /* SwiftUIView5.swift in Sources */,
 				1896594E28AF993A00C5CAF3 /* Validation.swift in Sources */,
+				18226EA328B50CA20090B036 /* BackButton.swift in Sources */,
 				18344EBA28A28A7700A59DE0 /* SwiftUIView1.swift in Sources */,
 				185ED8DC28B3BA4D00D817EB /* ForgotPasswordView.swift in Sources */,
 				185ED8D828B3942200D817EB /* CreatePassWordView.swift in Sources */,
@@ -688,6 +710,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUi Practice/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUi-Practice-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -717,6 +740,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUi Practice/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUi-Practice-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

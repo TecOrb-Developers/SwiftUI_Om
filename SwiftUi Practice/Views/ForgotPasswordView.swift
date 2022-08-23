@@ -9,39 +9,65 @@ import SwiftUI
 
 struct ForgotPasswordView: View {
     @State var phoneNumber = ""
+    @State private var selectedCountry: String = ""
     var body: some View {
-      
+      //  Text("nkjcndflksv")
         VStack(alignment: .leading){
             Text("Forgot Password")
                 .fontWeight(.bold)
+                .padding()
+                .frame(width: 350, height: 40,alignment:.leading)
                 .font(.system(size: 30))
-                .padding(.leading)
+                
             Text("Enter Phone Number")
-                .font(.title)
-                .padding(.leading)
-                padding()
+                .fontWeight(.semibold)
+                .padding()
+                .font(.system(size: 20))
             Text("Otp will be sent to this number")
-                .font(.title3)
-                .padding(.leading)
-                 padding()
-            HStack{
-                Button(action: {
-                    
+                .fontWeight(.none)
+                .padding()
+                .padding(.top,-20)
+//MARK: = textField CountryCode Mobile Number
+            HStack(){
+                  Button(action:
+                        {
+                    if selectedCountry != "" {
+                        Text(Locale.current.localizedString(forRegionCode: selectedCountry) ?? selectedCountry)
+                            .font(.system(size: 17))
+                        //.foregroundColor(Color.gray)
+                           
+                    } else {
+                        Text("+91")
+                            .font(.system(size: 17))
+                        
+                    }
                 })
                 {
-                    Text("+971")
+                    Picker("Country", selection: $selectedCountry) {
+                        ForEach(getLocales(), id: \.id) { country in
+                            Text(country.id).tag(country.id)
+                           
+                        }
+                    }
                     
                 }
-                TextField("Enter Number",text: $phoneNumber)
-                    .frame(width: 300, height: 45)
-                    .font(.title3)
                 
+                TextField("Enter Mobile No", text: $phoneNumber)
+                    .frame(width: 300, height: 45)
             }
             .padding()
+            NavigationLink(destination: OtpView())
+            {
+                Text("Submit")
+                    .frame(width: 250, height: 50)
+                    .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.black,lineWidth: 2))
+                        .padding(.leading,50)
+                        .font(.title2)
+                        .foregroundColor(Color.white)
+                        .background(.black)
+            }
         }
-       
-        .padding()
-        .padding(.bottom,30)
+        .padding(.bottom,300)
     }
 }
 
@@ -50,3 +76,19 @@ struct ForgotPasswordView_Previews: PreviewProvider {
         ForgotPasswordView()
     }
 }
+
+//MARK: -For Country Picker
+fileprivate struct Country {
+    var id: String
+    var name: String
+    var phoneCode:String
+}
+
+fileprivate func getLocales() -> [Country] {
+    let locales = Locale.isoRegionCodes
+        .filter { $0 != "United States"}
+        .compactMap {
+            Country(id: $0,name: Locale.current.localizedString(forRegionCode: $0) ?? $0, phoneCode: $0)}
+    return [Country(id: "US",name: Locale.current.localizedString(forRegionCode: "US") ?? "United States", phoneCode: "+91")] + locales
+}
+

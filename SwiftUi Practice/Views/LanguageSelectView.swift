@@ -8,18 +8,19 @@
 import SwiftUI
 
 struct LanguageSelectView: View {
+    @Environment(\.dismiss) private var dismiss
     var body: some View {
         
-         select()
-      
-            navigation(text: "SUBMIT", nextView: SwiftUIView5())
-                .frame(width: 350, height: 40)
-                .font(.title2)
-                .background(.blue)
-                .foregroundColor(Color.white)
-                .cornerRadius(10)
-               
+        select()
+        navigation(text: "SUBMIT", nextView: SwiftUIView5())
+            .frame(width: 350, height: 40)
+            .font(.title2)
+            .background(.blue)
+            .foregroundColor(Color.white)
+            .cornerRadius(10)
         
+            .navigationBarBackButtonHidden(true) // Hide default button
+                 .navigationBarItems(leading: NavBackButton(dismiss: self.dismiss))
     }
 }
 
@@ -27,8 +28,6 @@ struct LanguageSelectView_Previews: PreviewProvider {
     static var previews: some View {
         LanguageSelectView()
     }
-    
-    
 }
 struct select:View
 {
@@ -62,7 +61,7 @@ struct select:View
                     else{
                         self.selectFrench = true
                     }
-                
+                    
                 })
                 {
                     if selectEnglish
@@ -73,10 +72,10 @@ struct select:View
                             .scaledToFill()
                             .frame(width: 40, height: 40)
                             .cornerRadius(20)
-                  
+                        
                     }
                     else{
-                            Image("emd_point")
+                        Image("emd_point")
                             .resizable()
                             .scaledToFill()
                             .frame(width: 40, height: 40)
@@ -112,10 +111,10 @@ struct select:View
                             .scaledToFill()
                             .frame(width: 40, height: 40)
                             .cornerRadius(20)
-                  
+                        
                     }
                     else{
-                            Image("emd_point")
+                        Image("emd_point")
                             .resizable()
                             .scaledToFill()
                             .frame(width: 40, height: 40)
@@ -123,7 +122,7 @@ struct select:View
                     }
                 }
             }
-           
+            
             //.padding(10)
             .padding([.leading,.trailing],0)
             

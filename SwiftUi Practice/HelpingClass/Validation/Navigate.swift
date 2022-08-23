@@ -17,7 +17,7 @@ struct navigation<tagetview:View>:View
         NavigationLink(destination: nextView)
         {
        Text("\(text)")
-                .font(.title3)
+                .font(.title2)
                 .padding(70)
                // .padding([.leading, .trailing], 30)
                // .padding([.top], 10)

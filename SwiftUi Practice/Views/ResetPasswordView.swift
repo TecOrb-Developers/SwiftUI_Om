@@ -1,29 +1,25 @@
 //
-//  CreatePassWordView.swift
+//  ResetPasswordView.swift
 //  SwiftUi Practice
 //
-//  Created by Apple on 22/08/22.
+//  Created by Apple on 23/08/22.
 //
 
 import SwiftUI
 
-struct CreatePassWordView: View {
-      var body: some View {
-        CreatePassWord()
+struct ResetPasswordView: View {
+    var body: some View {
+        ResetPassWord()
     }
 }
 
-struct CreatePassWordView_Previews: PreviewProvider {
+struct ResetPasswordView_Previews: PreviewProvider {
     static var previews: some View {
-        CreatePassWordView()
+        ResetPasswordView()
     }
 }
 
-
-
-
-
-struct CreatePassWord:View{
+struct ResetPassWord:View{
     @State var newPassword = ""
     @State var isNewPassword = false
     @State var IsReNewPass = false
@@ -31,11 +27,11 @@ struct CreatePassWord:View{
     var body: some View
     {
         VStack(alignment: .leading){
-            Text("Create Password")
+            Text("Reset Password")
                 .fontWeight(.bold)
                 .padding()
                 .frame(width: 350, height: 40,alignment:.leading)
-                .font(.system(size: 25))
+                .font(.system(size: 30))
                 
             Text("Enter Password")
                 .fontWeight(.semibold)
@@ -45,12 +41,12 @@ struct CreatePassWord:View{
             HStack{
                 if isNewPassword
                 {
-                    TextField("New Password", text: $newPassword)
+                    TextField("Old Password", text: $newPassword)
                         .frame(width: 300, height: 45)
                         .padding()
                 }
                 else{
-                    SecureField("New Password", text: $newPassword)
+                    SecureField("Old Password", text: $newPassword)
                         .frame(width: 300, height: 45)
                         .padding()
                 }
@@ -83,12 +79,12 @@ struct CreatePassWord:View{
             HStack{
                 if IsReNewPass
                 {
-                    TextField("Re-Enter New Password",text:$reNewPassword)
+                    TextField("New Password",text:$reNewPassword)
                         .frame(width: 300, height: 45)
                         .padding()
                 }
                 else{
-                    SecureField("Re-Enter New Password",text:$reNewPassword)
+                    SecureField("New Password",text:$reNewPassword)
                         .frame(width: 300, height: 45)
                         .padding()
                 }
@@ -112,7 +108,7 @@ struct CreatePassWord:View{
             }
             .padding(.top,-30)
             
-            NavigationLink(destination: OtpView())
+            NavigationLink(destination: SwiftUIView5())
             {
                      Text("SUBMIT")
                     .font(.title2)
@@ -123,7 +119,7 @@ struct CreatePassWord:View{
             }
         }
         .padding()
-        .padding(.bottom, 200)
+        .padding(.bottom, 300)
 
     }
 }
