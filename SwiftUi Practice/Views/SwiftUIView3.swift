@@ -47,7 +47,7 @@ struct SwiftUIView3: View {
             }
         }
         .navigationBarBackButtonHidden(true) // Hide default button
-             .navigationBarItems(leading: NavBackButton(dismiss: self.dismiss))
+        .navigationBarItems(leading: NavBackButton(dismiss: self.dismiss))
       
     }
 }

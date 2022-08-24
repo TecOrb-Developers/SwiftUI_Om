@@ -10,7 +10,7 @@ import SKCountryPicker
 
 
 struct SwiftUIView5: View {
-    @Environment(\.presentationMode) var presentationMode
+    @Environment(\.dismiss) private var dismiss
     var body: some View {
         
         ZStack{
@@ -19,20 +19,8 @@ struct SwiftUIView5: View {
             loginView()
             
         }
-        //        navigationBarBackButtonHidden(true)
-        //        .navigationBarItems(leading:
-        //           Button(action:
-        //                    {
-        //               self.presentationMode.wrappedValue.dismiss()
-        //                   })
-        //                    {
-        //               HStack
-        //                 {
-        //                   Image(systemName: "sidemenu_arrow_icon-1")
-        //                   Text("Go Back")
-        //               }
-        //             }
-        //          )
+        .navigationBarBackButtonHidden(true) // Hide default button
+       .navigationBarItems(leading: NavBackButton(dismiss: self.dismiss))
     }
 }
 

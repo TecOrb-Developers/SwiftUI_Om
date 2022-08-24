@@ -20,7 +20,7 @@ struct LanguageSelectView: View {
             .cornerRadius(10)
         
             .navigationBarBackButtonHidden(true) // Hide default button
-                 .navigationBarItems(leading: NavBackButton(dismiss: self.dismiss))
+            .navigationBarItems(leading: NavBackButton(dismiss: self.dismiss))
     }
 }
 

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ForgotPasswordView: View {
+    @Environment(\.dismiss) private var dismiss
     @State var phoneNumber = ""
     @State private var selectedCountry: String = ""
     var body: some View {
@@ -38,8 +39,7 @@ struct ForgotPasswordView: View {
                            
                     } else {
                         Text("+91")
-                            .font(.system(size: 17))
-                        
+                            .font(.system(size: 15))
                     }
                 })
                 {
@@ -58,16 +58,19 @@ struct ForgotPasswordView: View {
             .padding()
             NavigationLink(destination: OtpView())
             {
-                Text("Submit")
-                    .frame(width: 250, height: 50)
+                Text("SUBMIT")
+                    .frame(width: 250, height: 45)
                     .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.black,lineWidth: 2))
                         .padding(.leading,50)
                         .font(.title2)
-                        .foregroundColor(Color.white)
-                        .background(.black)
+                        .foregroundColor(Color.black)
+                        .background(.white)
             }
         }
+        .padding()
         .padding(.bottom,300)
+        .navigationBarBackButtonHidden(true) // Hide default button
+        .navigationBarItems(leading: NavBackButton(dismiss: self.dismiss))
     }
 }
 

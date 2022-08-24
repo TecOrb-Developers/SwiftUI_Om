@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct CreatePassWordView: View {
+    @Environment(\.dismiss) private var dismiss
       var body: some View {
         CreatePassWord()
+              .navigationBarBackButtonHidden(true) // Hide default button
+              .navigationBarItems(leading: NavBackButton(dismiss: self.dismiss))
     }
 }
 
@@ -63,15 +66,19 @@ struct CreatePassWord:View{
                 {
                     if isNewPassword
                     {
-                        Image("pass_show-1")
+                        Image("reg_profile_edit_icon-1")
                             .resizable()
                             .scaledToFit()
+                            .background(.gray)
+                            .foregroundColor(Color.gray)
                     }
                     else
                     {
-                        Image("pass_hide-1")
+                        Image("success_tick")
                             .resizable()
                             .scaledToFit()
+                            .frame(width: 4, height: 5)
+                            .foregroundColor(Color.black)
                     }
             
                 }
@@ -98,14 +105,18 @@ struct CreatePassWord:View{
                 })
                 {
                     if IsReNewPass{
-                        Image("pass_show-1")
+                        Image("reg_profile_edit_icon-1")
                             .resizable()
                             .scaledToFit()
+                            .frame(width: 4, height: 5)
+                            .foregroundColor(Color.black)
                     }
                     else{
-                        Image("pass_hide-1")
+                        Image("success_tick")
                             .resizable()
                             .scaledToFit()
+                            .frame(width: 4, height: 5)
+                            .foregroundColor(Color.black)
                     }
                 }
                 
@@ -116,14 +127,15 @@ struct CreatePassWord:View{
             {
                      Text("SUBMIT")
                     .font(.title2)
-                    .frame(width: 360, height: 45)
-                    .background(.black)
-                    .foregroundColor(Color.white)
+                    .frame(width: 250, height: 45)
+                    .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.black,lineWidth: 2))
+                    .background(.white)
+                    .foregroundColor(Color.black)
                     .cornerRadius(10)
             }
         }
         .padding()
-        .padding(.bottom, 200)
+        .padding(.bottom, 300)
 
     }
 }

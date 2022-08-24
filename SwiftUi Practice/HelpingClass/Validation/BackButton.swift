@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 struct NavBackButton: View {
+  
     let dismiss: DismissAction
     
     var body: some View {
@@ -18,7 +19,7 @@ struct NavBackButton: View {
             Image("back_icon_second")
                 
             Text("Go Back")
-                  .foregroundColor(Color.white)
+                  .foregroundColor(Color.red)
         }
     }
 }

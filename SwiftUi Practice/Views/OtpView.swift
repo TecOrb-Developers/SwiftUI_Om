@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct OtpView: View {
+    @Environment(\.dismiss) private var dismiss
     @State var otp1 = ""
     @State var otp2 = ""
     @State var otp3 = ""
@@ -62,14 +63,25 @@ struct OtpView: View {
                     .padding(15)
                     .overlay(RoundedRectangle(cornerRadius: 5).stroke(Color.black,lineWidth: 1))
             }
-            
-            navigation(text: "SUBMIT", nextView: ResetPasswordView())
-                .foregroundColor(Color.white)
-            
-                .padding(50)
+            NavigationLink(destination: ResetPasswordView())
+            {
+                Text("SUBMIT")
+            }
+                .frame(width: 250, height: 45)
+                .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.black,lineWidth: 2))
+                    .padding(.leading,50)
+                    .font(.title2)
+                    .foregroundColor(Color.black)
+                    .background(.white)
+                    .padding()
         }
+        .padding()
         .padding(.bottom,300)
+        
+        .navigationBarBackButtonHidden(true) // Hide default button
+        .navigationBarItems(leading: NavBackButton(dismiss: self.dismiss))
     }
+      
     /*
      @ViewBuilder
      func otpField() -> some View

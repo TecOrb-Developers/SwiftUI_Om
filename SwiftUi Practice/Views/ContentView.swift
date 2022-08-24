@@ -31,7 +31,7 @@ struct ContentView: View {
             
         }
 //    
-   .navigationBarBackButtonHidden(true) // Hide default button
+         .navigationBarBackButtonHidden(true) // Hide default button
         .navigationBarItems(leading: NavBackButton(dismiss: self.dismiss))
     }
 }

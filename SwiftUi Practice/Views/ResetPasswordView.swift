@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct ResetPasswordView: View {
+    @Environment(\.dismiss) private var dismiss
     var body: some View {
         ResetPassWord()
+    .navigationBarBackButtonHidden(true) // Hide default button
+    .navigationBarItems(leading: NavBackButton(dismiss: self.dismiss))
     }
 }
 
@@ -59,13 +62,13 @@ struct ResetPassWord:View{
                 {
                     if isNewPassword
                     {
-                        Image("pass_show-1")
+                        Image("reg_profile_edit_icon-1")
                             .resizable()
-                            .scaledToFit()
+                            .scaledToFill()
                     }
                     else
                     {
-                        Image("pass_hide-1")
+                        Image("success_tick")
                             .resizable()
                             .scaledToFit()
                     }
@@ -94,12 +97,12 @@ struct ResetPassWord:View{
                 })
                 {
                     if IsReNewPass{
-                        Image("pass_show-1")
+                        Image("reg_profile_edit_icon-1")
                             .resizable()
                             .scaledToFit()
                     }
                     else{
-                        Image("pass_hide-1")
+                        Image("success_tick")
                             .resizable()
                             .scaledToFit()
                     }
@@ -112,10 +115,13 @@ struct ResetPassWord:View{
             {
                      Text("SUBMIT")
                     .font(.title2)
-                    .frame(width: 360, height: 45)
-                    .background(.black)
-                    .foregroundColor(Color.white)
+                    .frame(width: 250, height: 45)
+                    .overlay(RoundedRectangle(cornerRadius: 10)
+                    .stroke(Color.black,lineWidth: 2))
+                    .background(.white)
+                    .foregroundColor(Color.black)
                     .cornerRadius(10)
+                    .padding(.leading,50)
             }
         }
         .padding()
