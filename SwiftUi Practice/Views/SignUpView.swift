@@ -8,12 +8,9 @@
 import SwiftUI
 
 struct SignUpView: View {
-    @Environment(\.dismiss) private var dismiss
+    
     var body: some View {
         Signup()
-        
-        .navigationBarBackButtonHidden(true) // Hide default button
-        .navigationBarItems(leading: NavBackButton(dismiss: self.dismiss))
     }
 }
 
