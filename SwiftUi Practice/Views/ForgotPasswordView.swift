@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ForgotPasswordView: View {
+<<<<<<< HEAD
     @Environment(\.dismiss) private var dismiss
     @State var phoneNumber = ""
     @State private var selectedCountry: String = ""
@@ -71,6 +72,42 @@ struct ForgotPasswordView: View {
         .padding(.bottom,300)
         .navigationBarBackButtonHidden(true) // Hide default button
         .navigationBarItems(leading: NavBackButton(dismiss: self.dismiss))
+=======
+    @State var phoneNumber = ""
+    var body: some View {
+      
+        VStack(alignment: .leading){
+            Text("Forgot Password")
+                .fontWeight(.bold)
+                .font(.system(size: 30))
+                .padding(.leading)
+            Text("Enter Phone Number")
+                .font(.title)
+                .padding(.leading)
+                padding()
+            Text("Otp will be sent to this number")
+                .font(.title3)
+                .padding(.leading)
+                 padding()
+            HStack{
+                Button(action: {
+                    
+                })
+                {
+                    Text("+971")
+                    
+                }
+                TextField("Enter Number",text: $phoneNumber)
+                    .frame(width: 300, height: 45)
+                    .font(.title3)
+                
+            }
+            .padding()
+        }
+       
+        .padding()
+        .padding(.bottom,30)
+>>>>>>> d848bcb86c4d2c57807ce8776d47756dafd66d2c
     }
 }
 
@@ -79,6 +116,7 @@ struct ForgotPasswordView_Previews: PreviewProvider {
         ForgotPasswordView()
     }
 }
+<<<<<<< HEAD
 
 //MARK: -For Country Picker
 fileprivate struct Country {
@@ -95,3 +133,5 @@ fileprivate func getLocales() -> [Country] {
     return [Country(id: "US",name: Locale.current.localizedString(forRegionCode: "US") ?? "United States", phoneCode: "+91")] + locales
 }
 
+=======
+>>>>>>> d848bcb86c4d2c57807ce8776d47756dafd66d2c

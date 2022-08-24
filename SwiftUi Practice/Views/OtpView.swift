@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct OtpView: View {
+<<<<<<< HEAD
     @Environment(\.dismiss) private var dismiss
     @State var otp1 = ""
     @State var otp2 = ""
@@ -125,11 +126,19 @@ struct OtpView: View {
      }
      */
 }
+=======
+    var body: some View {
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    }
+}
+
+>>>>>>> d848bcb86c4d2c57807ce8776d47756dafd66d2c
 struct OtpView_Previews: PreviewProvider {
     static var previews: some View {
         OtpView()
     }
 }
+<<<<<<< HEAD
 //
 //enum OTPField
 //{
@@ -141,3 +150,5 @@ struct OtpView_Previews: PreviewProvider {
 //    case field6
 //
 //}
+=======
+>>>>>>> d848bcb86c4d2c57807ce8776d47756dafd66d2c

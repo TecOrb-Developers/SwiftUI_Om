@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct LanguageSelectView: View {
+<<<<<<< HEAD
     @Environment(\.dismiss) private var dismiss
     var body: some View {
         
@@ -21,6 +22,20 @@ struct LanguageSelectView: View {
         
             .navigationBarBackButtonHidden(true) // Hide default button
             .navigationBarItems(leading: NavBackButton(dismiss: self.dismiss))
+=======
+    var body: some View {
+        
+         select()
+      
+            navigation(text: "SUBMIT", nextView: SwiftUIView5())
+                .frame(width: 350, height: 40)
+                .font(.title2)
+                .background(.blue)
+                .foregroundColor(Color.white)
+                .cornerRadius(10)
+               
+        
+>>>>>>> d848bcb86c4d2c57807ce8776d47756dafd66d2c
     }
 }
 
@@ -28,6 +43,11 @@ struct LanguageSelectView_Previews: PreviewProvider {
     static var previews: some View {
         LanguageSelectView()
     }
+<<<<<<< HEAD
+=======
+    
+    
+>>>>>>> d848bcb86c4d2c57807ce8776d47756dafd66d2c
 }
 struct select:View
 {
@@ -61,7 +81,11 @@ struct select:View
                     else{
                         self.selectFrench = true
                     }
+<<<<<<< HEAD
                     
+=======
+                
+>>>>>>> d848bcb86c4d2c57807ce8776d47756dafd66d2c
                 })
                 {
                     if selectEnglish
@@ -72,10 +96,17 @@ struct select:View
                             .scaledToFill()
                             .frame(width: 40, height: 40)
                             .cornerRadius(20)
+<<<<<<< HEAD
                         
                     }
                     else{
                         Image("emd_point")
+=======
+                  
+                    }
+                    else{
+                            Image("emd_point")
+>>>>>>> d848bcb86c4d2c57807ce8776d47756dafd66d2c
                             .resizable()
                             .scaledToFill()
                             .frame(width: 40, height: 40)
@@ -111,10 +142,17 @@ struct select:View
                             .scaledToFill()
                             .frame(width: 40, height: 40)
                             .cornerRadius(20)
+<<<<<<< HEAD
                         
                     }
                     else{
                         Image("emd_point")
+=======
+                  
+                    }
+                    else{
+                            Image("emd_point")
+>>>>>>> d848bcb86c4d2c57807ce8776d47756dafd66d2c
                             .resizable()
                             .scaledToFill()
                             .frame(width: 40, height: 40)
@@ -122,7 +160,11 @@ struct select:View
                     }
                 }
             }
+<<<<<<< HEAD
             
+=======
+           
+>>>>>>> d848bcb86c4d2c57807ce8776d47756dafd66d2c
             //.padding(10)
             .padding([.leading,.trailing],0)
             
